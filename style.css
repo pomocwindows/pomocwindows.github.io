@@ -244,3 +244,35 @@ form {
 		width: 250px;
 	}
 }
+@media (max-width: 500px) {
+	.logotype {
+		font-size: 36px;
+		padding: 20px 40px;
+	}
+	.windows {
+		margin-top: -50px
+	}
+	.services h1 {
+		font-size: 24px;
+	}
+	.terms {
+		left: 10%;
+		right: 10%;
+	}
+	.depart {
+		font-size: 24px;
+		padding: 0px 15px;
+	}
+	.form {
+		width: 100%;
+	}
+	.order h3 {
+		font-size: 24px;
+		padding: 0px 15px;
+	}
+	.telinput {
+		width: 200px;
+		left: 10%;
+		right: 10%;
+	}
+}
