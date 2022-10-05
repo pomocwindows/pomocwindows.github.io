@@ -1,0 +1,246 @@
+@font-face {
+	font-family: local;
+	src: url(Circe-Regular.ttf);
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #212121;
+}
+.background {
+	height: 600px;
+	background-image: linear-gradient(to top right, #44C1ED, #2AB8EB);
+
+}
+.logotype {
+	margin: 0px 0px 0px 45px;
+	font-family: local;
+	font-size: 58px;
+	line-height: 60%;
+	font-weight: bold;
+	color: #212121;
+	background-color: white;
+	padding: 25px 35px 10px;		
+	width: auto;
+	position: absolute;
+}
+.workhours {
+	font-size: 18px;
+	margin-left: 3px;
+}
+.icon {
+	margin: 5px 0px -7px 5px;
+}
+.services {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+.services h1 {
+	width: max-content;
+	font-size: 42px;
+	font-family: local;
+	font-weight: bold;
+	background-color: #F3E74D;
+	padding: 5px 10px;
+}
+.cards {
+	border-spacing: 25px;
+}
+.windows {
+	text-align: center;
+	padding-top: 190px;
+}
+.arrow {
+	height: 40px;
+	width: 40px;
+	float: right;
+	margin-top: -45px;
+	margin-right: 10px;
+}
+.terms {
+	position: absolute;
+	top: 140px;
+	right: 100px;
+	padding: 25px 35px;
+	background-color: #fff;
+	color: #212121;
+}
+.termsdescription {
+	text-align: center;
+	font-family: local;
+	font-size: 27px;
+	line-height: 80%;
+	font-weight: bold;
+}
+.descmini {
+	font-size: 15px;
+}
+.termcard {
+	width:inherit;
+	border: 3px solid black;
+	margin: 15px 0px;
+	padding: 10px;
+	font-size: 18px;
+	font-family: local;
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: #F3E74D;
+}
+.termcard:hover {
+	transition: 0.25s linear;
+	transform: scale(0.925);
+}
+.depart {
+	margin-top: 50px;
+	font-size: 32px;
+	font-family: local;
+	font-weight: bold;
+	text-align: center;
+	color: #3B3B3B;
+}
+.incards {
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+.card {
+	font-family: local;
+	width: 300px;
+	height: 300px;
+	padding: 25px;
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 0px 0px 10px 13px rgba(221,221,221,0.5);
+	display: table-cell;
+	vertical-align: middle;
+}
+.card:hover {
+	transform: scale(1.1);
+	transition: all 0.5s ease-out;
+	cursor: pointer;
+}
+.incard {
+	display: inline-block;
+	
+}
+.cardtext {
+	font-size: 30px;
+	font-weight: bold;	
+	text-align: center;
+	background-color: #F3E74D;
+	padding: 5px;
+}
+.cardprice {
+	font-size: 20px;
+	font-weight: bold;
+}
+.cardnote {
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+.notecolor {
+	background-color: #A4E7FF;
+}
+.telinput {
+	border: none;
+	background-color: #E1E1E1;
+	outline: none;
+	border-radius: 25px;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: local;
+	margin: 5px 1px;
+	width: 230px;
+	font-weight: bold;
+}
+.tiw {
+	width: 512px;
+}
+.subinput {
+	border: none;
+	background-color: #E1E1E1;
+	outline: none;
+	color: #212121;
+	border-radius: 25px;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+	font-family: local;
+	margin: 10px;
+	font-weight: bold;
+}
+.order {
+	text-align: center;
+	font-size: 30px;
+	color: #3B3B3B;
+	font-family: local;
+	font-weight: bold;
+	margin: 0px 25px 0px 25px;
+}
+form {
+	width: 60%;
+	margin: auto;
+	margin-top: 30px;
+}
+.footer {
+	margin-top: 20px;
+	padding: 30px 40px;
+	font-family: local;
+	font-size: 16px;
+	font-weight: bold;
+	background-image: linear-gradient(to top right, #2AB8EB, #44C1ED);
+	color:rgba(243,243,243,1.00);
+}
+@media (max-width: 1050px) {
+	form {
+		width: 80%;
+	}
+	.background {
+		height: 1100px;
+	}
+	.termscontainer {
+		margin-top: -80px;
+		position: relative;
+	}
+	.terms {
+		position: absolute;
+		left: 25%;
+		right: 25%;
+	}
+}
+@media (max-width: 800px) {
+	.form {
+		width: 50%;
+	}
+	.telinput {
+		width: 200px;
+	}
+	.terms {
+		left: 15%;
+		right: 15%;
+	}
+	.logotype {
+		font-size: 48px;
+		text-align: center;
+	    position: static;
+		margin-left: 0px;
+	}
+	.windows {
+		padding-top: 100px;
+	}
+	.windows img {
+		height: 270px;
+	}
+	.services {
+		left: 50px;
+	}
+	.services h1 {
+		font-size: 32px;
+	}
+	.card {
+		width: 250px;
+	}
+}
