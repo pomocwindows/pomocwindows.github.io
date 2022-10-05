@@ -38,11 +38,13 @@ window.onload = init;
 	document.getElementById('contactform').addEventListener('submit', function(event) {
 		event.preventDefault();
 		
+		document.getElementById('submit').disabled = true;
+		
 		var params = {
-			name: document.getElementById("termname").value,
+			//name: document.getElementById("termname").value,
 			phone: document.getElementById("termtel").value,
-			termin: document.getElementById("termtime").value,
-			message: document.getElementById("termjob").value
+			//termin: document.getElementById("termtime").value,
+			//message: document.getElementById("termjob").value
 		};
 
 		emailjs.send('service_dj0u2uf', 'template_9a7t8fn', params)

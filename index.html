@@ -16,9 +16,9 @@
 			<div class="logotype">
 			  <a href="pomocwindows.pl">PomocWindows.pl</a><br>
 				<span class="workhours">
-					Warszawa, 8 - 20godz, codziennie! +48 791-474-721
+					Warszawa, zadzwoń +48 791-474-721 lub napisz na
 					<a href="https://wa.me/qr/A3T7IJO542QSM1" target="_blank"><img src="pomoc windows whatsapp.png" height="28px" class="icon"></a>
-					<a href="https://t.me/maxonegeograf" target="_blank"><img src="pomoc windows telegram.png" height="28px" class="icon"></a>
+					<a href="https://t.me/pomocwindows" target="_blank"><img src="pomoc windows telegram.png" height="28px" class="icon"></a>
 					</span>
 			</div>
 			
@@ -34,90 +34,107 @@
 			
 			<div class="termscontainer">
 				<div class="terms">
-					<div class="termsdescription">Najbliższe wolne terminy<br><span class="descmini">kliknij, aby wybrać</span></div>
+					<div class="termsdescription">Najbliższe wolne terminy<br><!--<span class="descmini">kliknij, aby wybrać</span>--></div>
 					<div class="termscards">
-						<a href="#contact" onClick="order(0)"><div class="termcard">
+						<!--<a href="#contact" onClick="order(0)">-->
+						<div class="termcard">
 							<div class="termcardtext" id="term0">
 								Wtorek 04.10.2022<br>20:00 - 22:00
 							</div>
 							<img class="arrow" src="arrow.png">
-						</div></a>
-						<a href="#contact" onClick="order(1)"><div class="termcard">
+						</div>
+						<!--</a>-->
+						<!--<a href="#contact" onClick="order(1)">-->
+						<div class="termcard">
 							<div class="termcardtext" id="term1">
 								Środa 05.10.2022<br>
 								14:00 - 16:00
 							</div>
 							<img class="arrow" src="arrow.png">
-						</div></a>
-						<a href="#contact" onClick="order(2)"><div class="termcard">
+						</div>
+						<!--</a>-->
+						<!--<a href="#contact" onClick="order(2)">-->
+						<div class="termcard">
 							<div class="termcardtext" id="term2">
 								Środa 05.10.2022<br>
 								16:00 - 18:00
 							</div>
 							<img class="arrow" src="arrow.png">
-						</div></a>
+						</div>
+						<!--</a>-->
 					</div>
 				</div>
 			</div>
 		</div>
 			
 			<div class="depart">
-				Warszawa, wyjazd bezplatny! Dla wszystkich ofert!
+				Warszawa, wyjazd bezplatny! Przykładowe oferty:
 			</div>
 			
 <div class="incards">
     <div class="cards">
 		<div class="incard">
-		  <a href="#contact" onClick="job('Instalacja Windows')"><div class="card">
+		  	<!--<a href="#contact" onClick="job('Instalacja Windows')">-->
+		  	<div class="card">
 				<h2><span class="cardtext">Instalacja Windows</span></h2>
 				<span class="cardprice">100 PLN</span>
 				<h3><span class="notecolor">Oficjalny Windows 10/11</span></h3>
-				<h3><span class="notecolor">lub</span></h3>
-				<h3><span class="notecolor">Przywracanie systemu</span></h3>
-			</div></a>
+				<h3><span class="notecolor">Aktywacja systemu</span></h3>
+				<h3><span class="notecolor">Ustawienie hasła</span></h3>
+			</div>
+			<!--</a>-->
 		</div>
 		
 		<div class="incard">
-			<a href="#contact" onClick="job('Optymalizacja systemu')"><div class="card">
+			<!--<a href="#contact" onClick="job('Optymalizacja systemu')">-->
+			<div class="card">
 				<h2><span class="cardtext">Optymalizacja systemu</span></h2>
 				<span class="cardprice">70 PLN</span>
 				<h3><span class="notecolor">Сzyszczenie wirusów</span></h3>
 				<h3><span class="notecolor">Przyspieszenie pracy</span></h3>
 				<h3><span class="notecolor">Instalowanie antywirusa</span></h3>
-			</div></a>
+			</div>
+			<!--</a>-->
 		</div>
 		
 		<div class="incard">
-			<a href="#contact" onClick="job('Konfiguracja urządzeń')"><div class="card">
+			<!--<a href="#contact" onClick="job('Konfiguracja urządzeń')">-->
+			<div class="card">
 				<h2><span class="cardtext">Konfiguracja urządzeń</span></h2>
 				<span class="cardprice">50 PLN</span>
 				<h3><span class="notecolor">Instalacja sterowników</span></h3>
 				<h3><span class="notecolor">Konfigurowanie drukarki</span></h3>
-			</div></a>
+				<h3><span class="notecolor">Ustawienie tabletu/smartfona</span></h3>
+			</div>
+			<!--</a>-->
 		</div>
 		
 	</div>
 </div>
 	<div class="order" id="contact">
-		<h3>Zostaw swój numer telefonu i opisz problem, oddzwonimy natychmiast</h3>
+		<h3>Zostaw swój numer telefonu, oddzwonimy <span class="ycolor">w ciągu 1 minuty!</span></h3>
 		<form method="post" class="form" id="contactform">
-			<div>
+			<!--<div>
 				<input type="text" class="telinput tiw" id="termname" placeholder="Imię Nazwisko" value="" maxlength="100" required/>
-			</div>
+			</div>-->
 			<div>
-				<input type="tel" class="telinput" id="termtel" placeholder="+48" value="" pattern="[-+0-9]{7,17}" maxlength="12" required/>
-				<input type="text" class="telinput" id="termtime" placeholder="Termin" value="" maxlength="50"/>
+				<input type="tel" class="telinput tiw" id="termtel" placeholder="+48" value="" pattern="[-+0-9]{7,17}" maxlength="12" required/>
+				<!--<input type="text" class="telinput" id="termtime" placeholder="Termin" value="" maxlength="50"/>-->
 			</div>
-			<div>
+			<!--<div>
 				<input type="text" class="telinput tiw" id="termjob" placeholder="Co trzeba naprawić?" value="" name="fio" maxlength="100"/>
-			</div>
+			</div>-->
 			<div>
-				<button type="submit" class="subinput" onsubmit="sendemail()">Wyślij</button> 
+				<button type="submit" id="submit" class="subinput" onsubmit="sendemail()">Wyślij</button> 
 			</div>
 		</form>
 	</div>
 	<div class="footer">
 		<p>
+			<div class="textimg">
+				<img src="windows pomoc specjalista.png" height="70px">
+				<span class="upper">Specjalista Maksym</span>
+			</div>
 			pomocwindowspl@gmail.com<br>
 			www.pomocwindows.pl<br>
 			All rights reserved<br>

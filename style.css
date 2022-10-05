@@ -63,7 +63,7 @@ a {
 }
 .terms {
 	position: absolute;
-	top: 140px;
+	top: 150px;
 	right: 100px;
 	padding: 25px 35px;
 	background-color: #fff;
@@ -102,6 +102,9 @@ a {
 	text-align: center;
 	color: #3B3B3B;
 }
+.ycolor {
+	background-color: #F3E74D;
+}
 .incards {
 	text-align: center;
 	margin: 20px 0px 20px 0px;
@@ -120,7 +123,6 @@ a {
 .card:hover {
 	transform: scale(1.1);
 	transition: all 0.5s ease-out;
-	cursor: pointer;
 }
 .incard {
 	display: inline-block;
@@ -165,8 +167,8 @@ a {
 	background-color: #E1E1E1;
 	outline: none;
 	color: #212121;
-	border-radius: 25px;
-	padding: 10px 20px 10px 20px;
+	border-radius: 35px;
+	padding: 15px 25px;
 	font-size: 20px;
 	font-family: local;
 	margin: 10px;
@@ -193,6 +195,22 @@ form {
 	font-weight: bold;
 	background-image: linear-gradient(to top right, #2AB8EB, #44C1ED);
 	color:rgba(243,243,243,1.00);
+}
+.textimg {
+	display: table;
+}
+.upper {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+@media (min-width: 1500px) {
+	.services {
+		left: 15%;
+	}
+	.terms {
+		right: 15%;
+	}
 }
 @media (max-width: 1050px) {
 	form {
