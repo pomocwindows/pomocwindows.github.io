@@ -4,19 +4,19 @@ var weekdays = new Array("Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwa
 var timearray = new Array(14, 16, 18, 20, 22);
 var terms = new Array();
 
-if (utc < 14 - 1) {
+if (utc < 14 - 2) {
 	for (let i = 0; i < 3; i++) {
 		terms.push(weekdays[day.getDay()] + " " + day.getUTCDate() + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[i] + ":00 - " + timearray[i + 1] + ":00");
 	}
-} else if (utc < 16 -1) {
+} else if (utc < 16 - 2) {
 	for (let i = 1; i < 4; i++) {
 		terms.push(weekdays[day.getDay()] + " " + day.getUTCDate() + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[i] + ":00 - " + timearray[i + 1] + ":00");
 	}
-} else if (utc < 18 - 1) {
+} else if (utc < 18 - 2) {
 	terms.push(weekdays[day.getDay()] + " " + day.getUTCDate() + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[2] + ":00 - " + timearray[3] + ":00");
 	terms.push(weekdays[day.getDay()] + " " + day.getUTCDate() + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[3] + ":00 - " + timearray[4] + ":00");
 	terms.push(weekdays[day.getDay() + 1] + " " + (parseInt(day.getUTCDate()) + 1) + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[0] + ":00 - " + timearray[1] + ":00");
-} else if (utc < 20 - 1) {
+} else if (utc < 20 - 2) {
 	terms.push(weekdays[day.getDay()] + " " + day.getUTCDate() + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[3] + ":00 - " + timearray[4] + ":00");
 	terms.push(weekdays[day.getDay() + 1] + " " + (parseInt(day.getUTCDate()) + 1) + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[0] + ":00 - " + timearray[1] + ":00");
 	terms.push(weekdays[day.getDay() + 1] + " " + (parseInt(day.getUTCDate()) + 1) + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[1] + ":00 - " + timearray[2] + ":00");

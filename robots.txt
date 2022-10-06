@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /Circle-Regular.ttf
+Disallow: /code.js
