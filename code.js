@@ -22,7 +22,7 @@ if (utc < 14 - 2) {
 	terms.push(weekdays[day.getDay() + 1] + " " + (parseInt(day.getUTCDate()) + 1) + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[1] + ":00 - " + timearray[2] + ":00");
 } else {
 	for (let i = 0; i < 3; i++) {
-		terms.push(weekdays[day.getDay() + 1] + " " + (parseInt(day.getUTCDate()) + 1) + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[i] + ":00 - " + timearray[i + 1] + ":00");
+		terms.push(weekdays[day.getDay() == 6 ? 0 : day.getDay() + 1] + " " + (parseInt(day.getUTCDate()) + 1) + "." + (parseInt(day.getUTCMonth()) + 1) + "." + day.getUTCFullYear() + "<br>" + timearray[i] + ":00 - " + timearray[i + 1] + ":00");
 	}
 }
 
