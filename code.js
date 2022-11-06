@@ -1,6 +1,6 @@
 var day = new Date()
 var utc = parseInt(day.getUTCHours()) + 2;
-var weekdays = new Array("Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota");
+var weekdays = new Array("Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela");
 var timearray = new Array(14, 16, 18, 20, 22);
 var terms = new Array();
 
